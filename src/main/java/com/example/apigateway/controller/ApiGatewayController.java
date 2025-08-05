@@ -39,7 +39,7 @@ public class ApiGatewayController {
 	 * 
 	 * @return PDFダウンロードページのテンプレート名
 	 */
-	@GetMapping("/")
+	@GetMapping("/getZip_OP4")
 	public String showIndexPage() {
 		return "zipDownload"; // zipDownload.htmlテンプレートを返す
 	}
@@ -96,4 +96,5 @@ public class ApiGatewayController {
 			throw new RuntimeException("Failed to download ZIP from remote server");
 		}
 	}
+
 }
